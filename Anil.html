@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anil Dhote</title>
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #e6f9ff; /* Changed background color */
+        color: #333;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease-out;
+    }
+
+    .user-info {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .user-info img {
+        max-width: 100px;
+        height: auto;
+        border-radius: 50%;
+        animation: fadeInLeft 1s ease-out;
+    }
+
+    .qr-code {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        border: 2px solid #007bff; /* Add border */
+        border-radius: 6px; /* Add border radius */
+        padding: 10px; /* Add padding */
+        background-color: #f0f0f0; /* Change background color */
+    }
+
+    /* .qr-code {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        animation: fadeInRight 1s ease-out;
+    } */
+
+    .qr-code p {
+        margin: 0;
+    }
+
+    .qr-code img {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        z-index: 1;
+    }
+
+    .qr-code:hover img {
+        display: block;
+        animation: bounceIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes bounceIn {
+        from {
+            transform: scale(0.5);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .user-info {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+        .user-info img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .qr-code {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .qr-code img {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 10px);
+            z-index: 1;
+        }
+        .qr-code:hover img {
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-info">
+            <img src="./WhatsApp Image 2024-04-23 at 2.09.17 PM.jpeg" alt="User Photo">
+            <div>
+                <p>Name: Anil Dhote</p>
+                <p>Contact Number: +917859819664</p>
+                <p>Email Address: anildhote@gmail.com</p>
+                <p>Permanent Address: At. Jambadi Khurd Post Jambada , Madhaya Pradesh (460551) </p>
+            </div>
+        </div>
+        <div class="qr-code">
+            <p>Click here for payment QR code</p>
+            <!-- Placeholder QR code image -->
+            <img src="./PRASANT PAN_page-0001.jpg" alt="Payment QR Code">
+        </div>
+    </div>
+</body>
+</html>
